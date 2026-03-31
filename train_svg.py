@@ -26,7 +26,7 @@ SYSTEM_PROMPT = (
     "You are an expert SVG code generator. "
     "Given a text description, output only valid SVG markup. "
     "Rules:\n"
-    "- Root element: <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"256\" height=\"256\" viewBox=\"0 0 256 256\">\n"
+    "- Root element must be <svg> with xmlns=\"http://www.w3.org/2000/svg\", width=\"256\", height=\"256\", and a viewBox matching the coordinate space used\n"
     "- Use only these elements: svg, g, path, rect, circle, ellipse, line, polyline, polygon, "
     "defs, use, symbol, clipPath, mask, linearGradient, radialGradient, stop, text, tspan, "
     "title, desc, style, pattern, marker, filter\n"
